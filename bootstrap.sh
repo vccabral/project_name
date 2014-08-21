@@ -2,5 +2,7 @@
 
 apt-get update
 
-apt-get install -y mysql-server
-apt-get install -y postgresql-9.3
+export DEBIAN_FRONTEND=noninteractive
+
+apt-get -q -y install mysql-server
+apt-get -q -y install postgresql-9.3
